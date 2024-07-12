@@ -19,7 +19,6 @@ class LanguageController extends Controller
 
     public function index(Request $request)
     {
-        dd('sdsd');
         $languages = $this->translation->allLanguages();
 
         return inertia('Control/Languages/Index', compact('languages'));
